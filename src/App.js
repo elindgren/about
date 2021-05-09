@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: 'center',
     color: theme.palette.text.secondary,
+    width: "50%",
   },
 }));
 
@@ -24,20 +25,16 @@ function App() {
 
   
   return (
-     <div className={classes.root}>
-      <Grid container
-        spacing={0}
-        direction="column"
-        alignItems="center"
-        justify="center"
-        style={{ minHeight: '100vh' }}>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>Hi and Welcome!</Paper>
-        </Grid>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>This is my (WIP) GH page</Paper>
-        </Grid>
-      </Grid>
+     <div className="root">
+      <div className="MainColumn">
+        <div className="SectionCard">
+          <Paper className={classes.paper}>
+            <Typography>
+              Hello and welcome
+            </Typography>
+          </Paper>
+        </div>
+      </div>
     </div>
   )
 }
