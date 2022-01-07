@@ -11,10 +11,9 @@ const Welcome: React.FC = () => {
             <div className="rounded-lg my-12 flex flex-col text-light-text-primary dark:text-dark-text-primary border border-light-border dark:border-dark-border bg-section-background">
                 <div className="p-4">
                     <div>
-                        My name is <b>Eric Lindgren</b>.
-                    </div>
-                    <span>
-                        {'I am a 24 year old PhD student computational physics in the '}
+                        {'My name is '}
+                        <b>Eric Lindgren</b>
+                        {'. I am a 24 year old PhD student in physics, and part of the '}
                         <a
                             className="underline hover:text-light-primary"
                             href="https://materialsmodeling.org/"
@@ -22,8 +21,13 @@ const Welcome: React.FC = () => {
                             Computational Materials Group
                         </a>
                         {' at Chalmers University of Technology in Gothenburg, Sweden.'}
-                    </span>
-                    <div>{'This site showcases my research, CV and skills.'}</div>
+                    </div>
+                    <span></span>
+                    <div className="mt-4">
+                        {
+                            'This site showcases my research, CV and skills. Use the links at the top or the bottom of this page if you want to get in touch!'
+                        }
+                    </div>
                 </div>
             </div>
         </div>
