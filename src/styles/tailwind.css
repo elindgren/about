@@ -527,10 +527,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 8rem;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
 .flex-grow {
   flex-grow: 1;
 }
