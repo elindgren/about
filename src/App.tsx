@@ -61,7 +61,7 @@ function App() {
                         <CVItem
                             title="Master Thesis Project"
                             location="Syntronic AB, Gothenburg, Sweden"
-                            time="2021-2021"
+                            time="2021"
                             body="Master Thesis project with the aim of applying neural networks and machine learning methods based on graph theory on data over the functional behavior of the human brain. Specifically, we are applying graph convolutional neural networks (GCNs) and population graphs on fMRI brain networks in order to classify and understand the ageing of the human brain."
                         />
                         <CVItem
@@ -114,7 +114,7 @@ function App() {
                         <SkillItem
                             title={'French'}
                             body={'Elementary'}
-                            comment={'Studies in school and in my spare time'}
+                            comment={'Courses during middle and high school'}
                         />
                         <SkillItem
                             title={'Korean'}

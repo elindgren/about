@@ -51,7 +51,9 @@ const StyledSwitch = styled(Switch)(() => ({
 }))
 
 const DarkModeToggle: React.FC = () => {
-    const [darkMode, setDarkMode] = useState(false)
+    const [darkMode, setDarkMode] = useState(
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+    )
     useEffect(() => {
         if (darkMode) {
             localStorage.theme = 'dark'

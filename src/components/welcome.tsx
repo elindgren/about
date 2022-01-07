@@ -2,13 +2,13 @@ import React from 'react'
 
 const Welcome: React.FC = () => {
     return (
-        <div className="flex flex-col items-center space-y-4 md:w-3/4 lg:w-196">
-            <div className="flex flex-row items-center text-[64px] text-light-primary space-x-2">
-                <span className="text-[120px] pb-4 font-bold">{'{'}</span>
+        <div className="flex flex-col items-center space-y-4 mx-4 md:w-3/4 lg:w-196">
+            <div className="flex flex-row items-center text-[32px] lg:text-[64px] text-light-primary space-x-2">
+                <span className="text-[64px] lg:text-[120px] pb-4 font-bold">{'{'}</span>
                 <span className="align-middle">{'Hello there 👋'}</span>
-                <span className="text-[120px] pb-4 font-bold">{'}'}</span>
+                <span className="text-[64px] lg:text-[120px] pb-4 font-bold">{'}'}</span>
             </div>
-            <div className="rounded-lg my-12 mx-2 md:w-3/4 lg:w-196 flex flex-col text-light-text-primary dark:text-dark-text-primary border border-light-border dark:border-dark-border bg-section-background">
+            <div className="rounded-lg my-12 flex flex-col text-light-text-primary dark:text-dark-text-primary border border-light-border dark:border-dark-border bg-section-background">
                 <div className="p-4">
                     <div>
                         My name is <b>Eric Lindgren</b>.
