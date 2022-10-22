@@ -4,9 +4,11 @@ interface SkillItemProps {
     title: string
     body: string
     comment?: string
+    longText?: boolean
 }
 
-const SkillItem: React.FC<SkillItemProps> = ({ title, body, comment }) => {
+const SkillItem: React.FC<SkillItemProps> = ({ title, body, comment, longText }) => {
+    const bodyComponent = <div className="flex-grow text-light-text-secondary">{body}</div>
     return (
         <div className="w-full flex flex-row justify-start">
             <div className="w-16 flex items-center justify-center">
@@ -17,9 +19,10 @@ const SkillItem: React.FC<SkillItemProps> = ({ title, body, comment }) => {
                     <div className="h-full flex justify-center items-center">
                         <span className="text-lg font-bold text-light-text-primary">{title}</span>
                     </div>
-                    <div className="flex-grow text-light-text-secondary">{body}</div>
+                    {!longText && bodyComponent}
                     <div className="italic text-light-text-secondary">{comment}</div>
                 </div>
+                {longText && bodyComponent}
             </div>
         </div>
     )

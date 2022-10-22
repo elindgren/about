@@ -13,7 +13,7 @@ const Welcome: React.FC = () => {
                     <div>
                         {'My name is '}
                         <b>Eric Lindgren</b>
-                        {'. I am a 24 year old PhD student in physics, and part of the '}
+                        {'. I am a 25 year old PhD student in physics, and part of the '}
                         <a
                             className="underline hover:text-light-primary"
                             href="https://materialsmodeling.org/"

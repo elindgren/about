@@ -21,7 +21,7 @@ function App() {
                             title="Saliency mapping of RS-fMRI data in GCNs for sex and brain age prediction"
                             body="Master Thesis in Physics, hosted by Syntronic Research and Development. Together with Kevin Andersson, we investigated Graph Convolutional Neural Networks (GCNs) for predicting brain age and biological sex from fMRI scans of the human brain."
                             uri="https://hdl.handle.net/20.500.12380/302435"
-                            time="2020"
+                            time="2021"
                             image="publications/master_thesis"
                             abstract="Insight into how biological sex and healthy ageing affects the human brain are important for an increased understanding of the brain. Healthy ageing insights are also useful for clinical applications, for instance in identifying unhealthy ageing due to neurodegenerative disease. To this end, several studies in the last few years have used machine learning methods on neuroscientific data to predict subject sex and brain age. One particularly interesting approach has been to represent functionally connected networks in the brain as graphs, and apply Graph Convolutional Networks (GCNs). To investigate which functional brain networks are connected with sex and age, we develop and analyse GCN-based models that predict sex and age from resting-state fMRI data. The analysis of the models is done using saliency mapping techniques that give insight into which functional brain networks in the data are relevant for the predictions. With this approach, we obtain a sex prediction accuracy of up to 79% and an age prediction MAE of 5.9 years. Furthermore, we find indications that the Somatomotor Medial Network and the cerebellum are among the more important functional brain networks for predicting sex and brain age."
                         />
@@ -128,6 +128,7 @@ function App() {
                             body={
                                 'The focus of my degree. Mostly atomistic simulations, both classical and quantum mechanical.'
                             }
+                            longText={true}
                             comment={''}
                         />
                         <SkillItem
@@ -135,6 +136,7 @@ function App() {
                             body={
                                 'I am really intrigued by the inner workings of computers, and I find it very interesting to optimise computer programs running on powerful hardware.'
                             }
+                            longText={true}
                             comment={''}
                         />
                         <SkillItem
@@ -142,6 +144,7 @@ function App() {
                             body={
                                 'This interest is interconnected with my interest in high performance computing. The combination of using powerful hardware together with large amounts of data is something that I find very intriguing.'
                             }
+                            longText={true}
                             comment={''}
                         />
                         <SkillItem
@@ -149,6 +152,7 @@ function App() {
                             body={
                                 'I have long had an interest for the interface between biology and technology, and my master thesis project has been a great opportunity for nurturing that interest. The combination of cutting-edge technological research applied in a manner that could improve the quality of life for people is something that really motivates me.'
                             }
+                            longText={true}
                             comment={''}
                         />
                         <SkillItem
@@ -156,6 +160,7 @@ function App() {
                             body={
                                 'I believe that most e-learning tools used today does not utilise the possibilities of modern technology to its fullest extent, and hence I find novel efforts in this area to be very interesting. '
                             }
+                            longText={true}
                             comment={''}
                         />
                     </SubSection>
