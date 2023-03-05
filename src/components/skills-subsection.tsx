@@ -1,7 +1,7 @@
 import React from 'react'
 import Zoom from 'react-medium-image-zoom'
 
-interface SubSectionProps {
+interface SkillsSubSectionProps {
     title: string
     image?: string
     imageTitle?: string
@@ -23,9 +23,14 @@ const BackgroundFigure: React.FC<BackgroundFigureProps> = ({ title, image }) => 
     )
 }
 
-const SubSection: React.FC<SubSectionProps> = ({ title, image, imageTitle, children }) => {
+const SkillsSubSection: React.FC<SkillsSubSectionProps> = ({
+    title,
+    image,
+    imageTitle,
+    children,
+}) => {
     return (
-        <div className="card w-full shadow-xl bg-primary text-primary-content">
+        <div className="card w-full shadow-xl bg-secondary text-primary">
             {image && imageTitle && <BackgroundFigure title={imageTitle} image={image} />}
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
@@ -35,4 +40,4 @@ const SubSection: React.FC<SubSectionProps> = ({ title, image, imageTitle, child
     )
 }
 
-export default SubSection
+export default SkillsSubSection

@@ -1,5 +1,4 @@
 import React from 'react'
-import DarkModeToggle from './dark-mode-toggle'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import ScienceIcon from '@mui/icons-material/Science'
@@ -61,7 +60,7 @@ interface MainProps {
 
 const Main: React.FC<MainProps> = ({ children }) => {
     return (
-        <div className="h-screen w-screen bg-gradient-to-tr from-light-background via-light-background to-light-background-secondary dark:from-dark-background dark:to-gray-900 flex flex-col justify-start items-center overflow-x-hidden overflox-y-auto text-light-text-secondary dark:text-dark-text-primary">
+        <div className="h-screen w-screen bg-gradient-to-tr from-bg-base-100 to-bg-primary flex flex-col justify-start items-center overflow-x-hidden overflox-y-auto ">
             <div className="w-full h-16 sticky top-0 z-10 backdrop-blur supports-bg-backdrop-blur:bg-white/90">
                 <div className="h-full flex flex-row justify-between items-center px-4 py-2">
                     <div className="flex flex-row items-center space-x-4">
@@ -70,10 +69,9 @@ const Main: React.FC<MainProps> = ({ children }) => {
                     </div>
                     <div className="flex flex-row space-x-2 md:space-x-6 items-center">
                         <Contact size={'medium'} />
-                        <DarkModeToggle />
                     </div>
                 </div>
-                <hr className="border-light-border dark:border-dark-border" />
+                <hr className="border-base-100" />
             </div>
             {children}
             <footer className="w-full bg-section-background flex flex-col md:flex-row justify-between mt-12 py-2 px-4 md:px-16 pb-8 text-light-text-secondary">
@@ -85,7 +83,7 @@ const Main: React.FC<MainProps> = ({ children }) => {
                     <span className="h-24 md:h-36 flex justify-start md:justify-end items-end">
                         Built using React.js and Tailwind CSS
                         <br />
-                        Developed by Eric Lindgren, 2022
+                        Developed by Eric Lindgren, 2023
                     </span>
                 </div>
             </footer>

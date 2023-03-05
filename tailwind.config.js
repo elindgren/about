@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
   darkMode: 'class', //media
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -26,9 +27,12 @@ module.exports = {
       },
       width: {
         '128': '32rem',
+        '192': '48rem',
         '196': '49rem'
       }
     },
   },
-  plugins: [],
+  daisyui: {
+    themes: ["light", "dark", "cupcake", "bumblebee", "emerald", "corporate", "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"],
+  },
 }

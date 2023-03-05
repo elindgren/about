@@ -5,46 +5,73 @@ import 'react-medium-image-zoom/dist/styles.css'
 
 interface ResearchItemProps {
     title: string
+    authors: string
     time: string
     uri: string
-    body: string
+    body: string | React.ReactElement
     image: string
-    abstract: string
+    type: string
 }
 
-const ResearchItem: React.FC<ResearchItemProps> = ({ title, time, uri, body, abstract, image }) => {
-    return (
-        <div className="w-full flex flex-row justify-start items-center">
-            <div className="w-full flex flex-col">
-                <div className="flex flex-row space-x-2 items-center justify-between py-2">
-                    <div className="text-lg font-bold text-light-text-primary">{title}</div>
-                    <div className="font-bold text-light-text-secondary">{time}</div>
-                </div>
-                <button
-                    onClick={() => {
-                        navigator.clipboard.writeText(uri)
-                        toast('🦄 Copied!', {
-                            position: 'bottom-center',
-                            autoClose: 2500,
-                        })
-                    }}
-                    className="border-2 rounded-md p-1 font-semibold w-20 text-light-text-secondary border-light-text-secondary hover:bg-gray-700"
-                >
-                    Link 🔗
-                </button>
-                <div className="py-4 w-1/2 m-auto">
-                    <Zoom>
-                        <img
-                            alt={`Publication: ${title}`}
-                            src={`${process.env.PUBLIC_URL}/${image}.png`}
-                        />
-                    </Zoom>
-                </div>
+interface URLButtonProps {
+    uri: string
+}
 
-                <div className="py-2 text-light-text-primary">{body}</div>
-                <div className="font-bold">Abstract</div>
-                <div className="px-4 text-sm italic break-word text-light-text-secondary">
-                    {abstract}
+const URLButton: React.FC<URLButtonProps> = ({ uri }) => {
+    return (
+        <button
+            onClick={() => {
+                navigator.clipboard.writeText(uri)
+                toast('🦄 Copied!', {
+                    position: 'bottom-center',
+                    autoClose: 1500,
+                    theme: 'dark',
+                })
+            }}
+            className="btn btn-ghost"
+        >
+            🔗 Link
+        </button>
+    )
+}
+
+interface TOCFigureProps {
+    title: string
+    image: string
+}
+
+const TOCFigure: React.FC<TOCFigureProps> = ({ title, image }) => {
+    return (
+        <div className="w-1/2 m-auto pt-4">
+            <Zoom>
+                <img alt={`Publication: ${title}`} src={`${process.env.PUBLIC_URL}/${image}`} />
+            </Zoom>
+        </div>
+    )
+}
+
+const ResearchItem: React.FC<ResearchItemProps> = ({
+    title,
+    authors,
+    time,
+    uri,
+    body,
+    type,
+    image,
+}) => {
+    return (
+        <div className="card bg-base-100 shadow-xl w-full image-full">
+            <TOCFigure title={title} image={image} />
+            <div className="card-body">
+                <h2 className="card-title">{title}</h2>
+                <div className="flex flex-row justify-between">
+                    <h3 className="text-sm font-semibold">{authors}</h3>
+                    <span className="badge badge-secondary">{time}</span>
+                </div>
+                <p>{body}</p>
+                <div className="card-actions justify-between items-center">
+                    <div className="badge badge-outline">{type}</div>
+                    <URLButton uri={uri} />
                 </div>
             </div>
         </div>
