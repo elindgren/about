@@ -5,9 +5,10 @@ import 'react-medium-image-zoom/dist/styles.css'
 
 interface ResearchItemProps {
     title: string
+    authors: string
     time: string
     uri: string
-    body: string
+    body: string | React.ReactElement
     image: string
     type: string
 }
@@ -41,7 +42,7 @@ interface TOCFigureProps {
 
 const TOCFigure: React.FC<TOCFigureProps> = ({ title, image }) => {
     return (
-        <div className="w-1/2 m-auto">
+        <div className="w-1/2 m-auto pt-4">
             <Zoom>
                 <img alt={`Publication: ${title}`} src={`${process.env.PUBLIC_URL}/${image}`} />
             </Zoom>
@@ -49,13 +50,24 @@ const TOCFigure: React.FC<TOCFigureProps> = ({ title, image }) => {
     )
 }
 
-const ResearchItem: React.FC<ResearchItemProps> = ({ title, time, uri, body, type, image }) => {
+const ResearchItem: React.FC<ResearchItemProps> = ({
+    title,
+    authors,
+    time,
+    uri,
+    body,
+    type,
+    image,
+}) => {
     return (
         <div className="card bg-base-100 shadow-xl w-full image-full">
             <TOCFigure title={title} image={image} />
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
-                <div className="badge badge-secondary">{time}</div>
+                <div className="flex flex-row justify-between">
+                    <h3 className="text-sm font-semibold">{authors}</h3>
+                    <span className="badge badge-secondary">{time}</span>
+                </div>
                 <p>{body}</p>
                 <div className="card-actions justify-between items-center">
                     <div className="badge badge-outline">{type}</div>

@@ -6,7 +6,7 @@ interface SectionProps {
 }
 
 const Section: React.FC<SectionProps> = ({ title, children }) => {
-    const sectionStyles = 'mt-12 mx-4 md:w-3/4 lg:w-196 flex flex-col'
+    const sectionStyles = 'mt-12 mx-4 md:w-3/4 lg:w-192 flex flex-col'
     return (
         <div className={sectionStyles}>
             <div className="w-full flex flex-col justify-between space-y-4">

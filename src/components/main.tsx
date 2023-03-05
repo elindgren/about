@@ -1,5 +1,4 @@
 import React from 'react'
-import DarkModeToggle from './dark-mode-toggle'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import ScienceIcon from '@mui/icons-material/Science'
@@ -70,10 +69,9 @@ const Main: React.FC<MainProps> = ({ children }) => {
                     </div>
                     <div className="flex flex-row space-x-2 md:space-x-6 items-center">
                         <Contact size={'medium'} />
-                        <DarkModeToggle />
                     </div>
                 </div>
-                <hr className="border-light-border dark:border-dark-border" />
+                <hr className="border-base-100" />
             </div>
             {children}
             <footer className="w-full bg-section-background flex flex-col md:flex-row justify-between mt-12 py-2 px-4 md:px-16 pb-8 text-light-text-secondary">
@@ -85,7 +83,7 @@ const Main: React.FC<MainProps> = ({ children }) => {
                     <span className="h-24 md:h-36 flex justify-start md:justify-end items-end">
                         Built using React.js and Tailwind CSS
                         <br />
-                        Developed by Eric Lindgren, 2022
+                        Developed by Eric Lindgren, 2023
                     </span>
                 </div>
             </footer>

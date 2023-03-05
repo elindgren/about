@@ -6,7 +6,7 @@ const Welcome: React.FC = () => {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-sm md:max-w-lg">
-                    <div className="m-auto flex flex-row items-center text-[32px] lg:text-[64px] text-primary">
+                    <div className="flex flex-row items-center justify-center text-[32px] lg:text-[64px] text-primary">
                         <span className="text-[64px] lg:text-[120px] pb-4 font-bold">{'{'}</span>
                         <span className="align-middle">{'Hello there 👋'}</span>
                         <span className="text-[64px] lg:text-[120px] pb-4 font-bold">{'}'}</span>
@@ -17,7 +17,7 @@ const Welcome: React.FC = () => {
                             <b>Eric Lindgren</b>
                             {'. I am a 26 year old PhD student in physics, and part of the '}
                             <a
-                                className="underline hover:text-light-primary"
+                                className="underline hover:text-primary-content font-bold"
                                 href="https://materialsmodeling.org/"
                             >
                                 Computational Materials Group

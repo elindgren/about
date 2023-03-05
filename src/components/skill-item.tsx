@@ -10,10 +10,10 @@ const SkillItem: React.FC<SkillItemProps> = ({ title, body, comment }) => {
     return (
         <div>
             <div className="flex flex-row justify-between">
-                <h2 className="font-bold text-base">{title}</h2>
-                <span className="badge badge-outline">{comment}</span>
+                <h2 className="font-bold">{title}</h2>
+                <span className="badge badge-primary text-base-100">{comment}</span>
             </div>
-            <p className="text-base-100">{body}</p>
+            <p className="text-primary">{body}</p>
         </div>
     )
 }
