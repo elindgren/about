@@ -17,7 +17,11 @@ const BackgroundFigure: React.FC<BackgroundFigureProps> = ({ title, image }) => 
     return (
         <div className="w-full m-auto">
             <Zoom>
-                <img alt={`${title}`} src={`${process.env.PUBLIC_URL}/${image}`} />
+                <img
+                    className="rounded-t-2xl"
+                    alt={`${title}`}
+                    src={`${process.env.PUBLIC_URL}/${image}`}
+                />
             </Zoom>
         </div>
     )
