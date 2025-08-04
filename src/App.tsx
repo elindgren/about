@@ -51,65 +51,6 @@ function App() {
                         type="Master thesis"
                     />
                 </Section>
-                <Section title={'CV'}>
-                    <SubSection
-                        title={'Education'}
-                        image="images/south_korea.jpg"
-                        imageTitle="South Korea"
-                    >
-                        <CVItem
-                            title="Exchange Studies"
-                            location="Seoul National University, South Korea"
-                            time="2020-2020"
-                        />
-                        <CVItem
-                            title="MSc Physics"
-                            location="Chalmers University of Technology, Sweden"
-                            time="2019-2021"
-                        />
-                        <CVItem
-                            title="BSc Engineering Physics"
-                            location="Chalmers University of Technology, Sweden"
-                            time="2016-2019"
-                        />
-                    </SubSection>
-                    <SubSection
-                        title={'Professional appointments'}
-                        image="images/yata.png"
-                        imageTitle="Yata logo"
-                    >
-                        <CVItem
-                            title="PhD Student in Computational Physics and Machine Learning"
-                            location="Chalmers University of Technology, Gothenburg, Sweden"
-                            time="2021-Current"
-                        />
-                        <CVItem
-                            title="Master Thesis Project"
-                            location="Syntronic AB, Gothenburg, Sweden"
-                            time="2021"
-                        />
-                        <CVItem
-                            title="Software developer, machine learning engineer"
-                            location="Yata, Gothenburg, Sweden"
-                            time="2019-Current"
-                        />
-                        <CVItem
-                            title="Amanuensis"
-                            location="Chalmers University of Technology, Gothenburg, Sweden"
-                            time="2019"
-                        />
-                        <CVItem
-                            title="Summer intern"
-                            location="Volvo Cars, Gothenburg, Sweden"
-                            time="2019"
-                        />
-                        <CVItem
-                            title="Summer intern"
-                            location="Volvo Cars, Gothenburg, Sweden"
-                            time="2018"
-                        />
-                    </SubSection>
-                </Section>
                 <Section title={'Skills'}>
                     <SkillsSubSection
                         title={'Programming languages & frameworks'}
@@ -189,6 +130,66 @@ function App() {
                             comment={'📚'}
                         />
                     </SkillsSubSection>
+                </Section>
+
+                <Section title={'CV'}>
+                    <SubSection
+                        title={'Education'}
+                        image="images/south_korea.jpg"
+                        imageTitle="South Korea"
+                    >
+                        <CVItem
+                            title="Exchange Studies"
+                            location="Seoul National University, South Korea"
+                            time="2020-2020"
+                        />
+                        <CVItem
+                            title="MSc Physics"
+                            location="Chalmers University of Technology, Sweden"
+                            time="2019-2021"
+                        />
+                        <CVItem
+                            title="BSc Engineering Physics"
+                            location="Chalmers University of Technology, Sweden"
+                            time="2016-2019"
+                        />
+                    </SubSection>
+                    <SubSection
+                        title={'Professional appointments'}
+                        image="images/yata.png"
+                        imageTitle="Yata logo"
+                    >
+                        <CVItem
+                            title="PhD Student in Computational Physics and Machine Learning"
+                            location="Chalmers University of Technology, Gothenburg, Sweden"
+                            time="2021-Current"
+                        />
+                        <CVItem
+                            title="Master Thesis Project"
+                            location="Syntronic AB, Gothenburg, Sweden"
+                            time="2021"
+                        />
+                        <CVItem
+                            title="Software developer, machine learning engineer"
+                            location="Yata, Gothenburg, Sweden"
+                            time="2019-Current"
+                        />
+                        <CVItem
+                            title="Amanuensis"
+                            location="Chalmers University of Technology, Gothenburg, Sweden"
+                            time="2019"
+                        />
+                        <CVItem
+                            title="Summer intern"
+                            location="Volvo Cars, Gothenburg, Sweden"
+                            time="2019"
+                        />
+                        <CVItem
+                            title="Summer intern"
+                            location="Volvo Cars, Gothenburg, Sweden"
+                            time="2018"
+                        />
+                    </SubSection>
                 </Section>
             </Main>
         </div>

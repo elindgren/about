@@ -12,7 +12,7 @@ const Section: React.FC<SectionProps> = ({ title, children }) => {
             <div className="w-full flex flex-col justify-between space-y-4">
                 <div className="w-full flex flex-row items-center space-x-2">
                     <span className="text-inherit text-lg">{title}</span>
-                    <hr className="flex flex-grow border-primary"></hr>
+                    <hr className="flex grow border-primary"></hr>
                 </div>
                 {children}
             </div>

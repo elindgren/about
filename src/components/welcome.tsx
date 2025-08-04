@@ -3,7 +3,7 @@ import React from 'react'
 const Welcome: React.FC = () => {
     return (
         <div className="hero">
-            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-overlay bg-black/50"></div>
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-sm md:max-w-lg">
                     <div className="flex flex-row items-center justify-center text-[32px] lg:text-[64px] text-primary">
