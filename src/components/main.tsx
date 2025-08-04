@@ -32,7 +32,7 @@ const Contact: React.FC<ContactProps> = ({ size, showName }) => {
         <>
             {contactDetails.map((contact, i) => {
                 return (
-                    <a className="underline" href={contact.link}>
+                    <a className="underline" key={`contact-${contact.label}`} href={contact.link}>
                         <div key={`contact-${i}`} className="flex flex-row space-x-2 items-center">
                             {contact.object}
                             <span>{contact.label}</span>
@@ -45,7 +45,7 @@ const Contact: React.FC<ContactProps> = ({ size, showName }) => {
         <>
             {contactDetails.map((contact) => {
                 return (
-                    <Tooltip title={contact.label}>
+                    <Tooltip title={contact.label} key={`contact-${contact.label}`}>
                         <a href={contact.link}>{contact.object}</a>
                     </Tooltip>
                 )
