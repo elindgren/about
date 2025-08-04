@@ -11,7 +11,7 @@ const Welcome: React.FC = () => {
                         <span className="align-middle">{'Hello there 👋'}</span>
                         <span className="text-[64px] lg:text-[120px] pb-4 font-bold">{'}'}</span>
                     </div>
-                    <p className="mb-5">
+                    <div className="mb-5">
                         <div>
                             {'My name is '}
                             <b>Eric Lindgren</b>
@@ -30,7 +30,7 @@ const Welcome: React.FC = () => {
                                 'This site showcases my research, CV and skills. Use the links at the top or the bottom of this page if you want to get in touch!'
                             }
                         </div>
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>

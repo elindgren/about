@@ -18,7 +18,7 @@ const BackgroundFigure: React.FC<BackgroundFigureProps> = ({ title, image }) => 
                 <img
                     className="rounded-t-2xl"
                     alt={`${title}`}
-                    src={`${import.meta.env.PUBLIC_URL}/${image}`}
+                    src={image}
                 />
         </div>
     )

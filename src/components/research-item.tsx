@@ -41,7 +41,7 @@ interface TOCFigureProps {
 const TOCFigure: React.FC<TOCFigureProps> = ({ title, image }) => {
     return (
         <div className="w-1/2 m-auto pt-4">
-                <img alt={`Publication: ${title}`} src={`${import.meta.env.PUBLIC_URL}/${image}`} />
+                <img alt={`Publication: ${title}`} src={image} />
         </div>
     )
 }

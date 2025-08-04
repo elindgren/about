@@ -64,7 +64,7 @@ const Main: React.FC<MainProps> = ({ children }) => {
             <div className="w-full h-16 sticky top-0 z-50 backdrop-blur supports-bg-backdrop-blur:bg-white/90">
                 <div className="h-full flex flex-row justify-between items-center px-4 py-2">
                     <div className="flex flex-row items-center space-x-4">
-                        <img alt="logo" src={`${import.meta.env.PUBLIC_URL}/logo.png`} width="50" />
+                        <img alt="logo" src={'logo.png'} width="50" />
                         <span className="text-lg md:text-2xl">Eric Lindgren</span>
                     </div>
                     <div className="flex flex-row space-x-2 md:space-x-6 items-center">
