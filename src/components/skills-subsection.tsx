@@ -1,5 +1,4 @@
 import React from 'react'
-import Zoom from 'react-medium-image-zoom'
 
 interface SkillsSubSectionProps {
     title: string
@@ -16,13 +15,11 @@ interface BackgroundFigureProps {
 const BackgroundFigure: React.FC<BackgroundFigureProps> = ({ title, image }) => {
     return (
         <div className="w-full m-auto">
-            <Zoom>
                 <img
                     className="rounded-t-2xl"
                     alt={`${title}`}
-                    src={`${process.env.PUBLIC_URL}/${image}`}
+                    src={`${import.meta.env.PUBLIC_URL}/${image}`}
                 />
-            </Zoom>
         </div>
     )
 }

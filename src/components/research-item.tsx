@@ -1,7 +1,5 @@
 import React from 'react'
 import { toast } from 'react-toastify'
-import Zoom from 'react-medium-image-zoom'
-import 'react-medium-image-zoom/dist/styles.css'
 
 interface ResearchItemProps {
     title: string
@@ -43,9 +41,7 @@ interface TOCFigureProps {
 const TOCFigure: React.FC<TOCFigureProps> = ({ title, image }) => {
     return (
         <div className="w-1/2 m-auto pt-4">
-            <Zoom>
-                <img alt={`Publication: ${title}`} src={`${process.env.PUBLIC_URL}/${image}`} />
-            </Zoom>
+                <img alt={`Publication: ${title}`} src={`${import.meta.env.PUBLIC_URL}/${image}`} />
         </div>
     )
 }
